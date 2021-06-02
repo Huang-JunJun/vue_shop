@@ -1,8 +1,51 @@
 <template>
-    <div>
-        home组件
-        <el-button type="info" @click="exitLogin()">退出</el-button>
-    </div>
+        <!-- <el-button type="info" @click="exitLogin()">退出</el-button> -->
+        <el-container class="home-container">
+            <!-- 头部区域 -->
+            <el-header>
+                <div>
+                    <img class="head-img" src="../assets/微信图片_20210602151323.png" alt="">
+                    <span>电商后台管理系统</span>
+                </div>
+                <el-button type="info" @click="exitLogin()">退出</el-button>
+            </el-header>
+            <!-- 主体区域 -->
+                <el-container>
+                    <!-- 侧边栏 -->
+                    <el-aside width="200px">
+                        <!-- 一级菜单 -->
+                        <el-menu
+                            default-active="2"
+                            class="el-menu-vertical-demo"
+                            @open="handleOpen"
+                            @close="handleClose"
+                            background-color="#333744"
+                            text-color="#fff"
+                            active-text-color="#ffd04b">
+                            <el-submenu index="1">
+                                <!-- 一级菜单的模板区域 -->
+                                <template slot="title">
+                                    <!-- 图标 -->
+                                <i class="el-icon-location"></i>
+                                <!-- 文本 -->
+                                <span>导航一</span>
+                                </template>
+                                <el-menu-item index="1-4-1">
+                                    <template slot="title">
+                                    <!-- 图标 -->
+                                <i class="el-icon-location"></i>
+                                <!-- 文本 -->
+                                <span>选项一</span>
+                                </template>
+                                </el-menu-item>
+                            </el-submenu>
+                            </el-menu>
+                    </el-aside>
+                    <!-- 主页 -->
+                        <el-main>Main</el-main>
+                </el-container>
+        </el-container>
+    
 </template>
 
 <script>
@@ -17,5 +60,41 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.home-container {
+    height: 100%;
+}
 
+.head-img {
+    height: 95%;
+}
+
+.el-button{
+    float: right;
+    top: 15%;
+}
+
+.el-header {
+    background-color:#373d41;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+        div{
+            display: flex;
+            align-items: center;
+            span  {
+                margin-left: 15px;
+            }
+    }
+}
+
+.el-aside {
+    background-color: #333744;
+}
+
+.el-main {
+    background-color: #EAEDF1;
+}
 </style>
