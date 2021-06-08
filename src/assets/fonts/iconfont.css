@@ -1,16 +1,46 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2569890 */
-  src: url('iconfont.woff2?t=1621926563076') format('woff2'),
-       url('iconfont.woff?t=1621926563076') format('woff'),
-       url('iconfont.ttf?t=1621926563076') format('truetype');
+  src: url('//at.alicdn.com/t/font_2569890_3m6ohi07g6q.woff2?t=1623094106892') format('woff2'),
+       url('//at.alicdn.com/t/font_2569890_3m6ohi07g6q.woff?t=1623094106892') format('woff'),
+       url('//at.alicdn.com/t/font_2569890_3m6ohi07g6q.ttf?t=1623094106892') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 25px;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-team:before {
+  font-size: 25px;
+  margin-right: 20px;
+  content: "\e6c0";
+}
+
+.icon-barchart:before {
+  font-size: 25px;
+  margin-right: 20px;
+  content: "\e7af";
+}
+
+.icon-shopping:before {
+  font-size: 25px;
+  margin-right: 20px;
+  content: "\e7cf";
+}
+
+.icon-unorderedlist:before {
+  font-size: 25px;
+  margin-right: 20px;
+  content: "\e7f4";
+}
+
+.icon-zoom:before {
+  font-size: 25px;
+  margin-right: 20px;
+  content: "\e748";
 }
 
 .icon-user1:before {
@@ -20,4 +50,3 @@
 .icon-lock:before {
   content: "\e7c9";
 }
-

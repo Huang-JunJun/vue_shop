@@ -70,8 +70,7 @@ export default {
                     //   1.1 项目中除了登录之外的其他API接口，必须在登录之后才能访问
                     //   1.2 token只应在当前网站打开期间生效，所以将token保存在sessionStorage中
                     // 2. 通过编程式导航到后台主页，路由地址是/home
-                }   
-                console.log(res);
+                }
                 window.sessionStorage.setItem("token",res.data.token)
                 this.$router.push("/home")
             }); // 接收回调函数
