@@ -22,6 +22,8 @@ import { Button,
     Dialog ,
     Switch ,
     Pagination ,
+    Tree ,
+    Tag ,
 } from 'element-ui'
 import { MessageBox } from 'element-ui';
 
@@ -47,5 +49,7 @@ Vue.use(TableColumn)
 Vue.use(Dialog)
 Vue.use(Switch)
 Vue.use(Pagination)
+Vue.use(Tree)
+Vue.use(Tag)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
