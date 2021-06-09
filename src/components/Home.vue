@@ -87,7 +87,6 @@ export default {
         },
         async getMeunList() {
             const {data : res} = await this.$http.get('menus')
-            console.log(res);
             if(res.meta.status !== 200) {
                 this.$message({
                     message: res.meta.msg,

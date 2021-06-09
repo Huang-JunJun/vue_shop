@@ -17,7 +17,13 @@ import { Button,
     Card ,
     Row ,
     Col ,
+    Table ,
+    TableColumn ,
+    Dialog ,
+    Switch ,
+    Pagination ,
 } from 'element-ui'
+import { MessageBox } from 'element-ui';
 
 Vue.use(Button)
 Vue.use(Form)
@@ -36,4 +42,10 @@ Vue.use(BreadcrumbItem)
 Vue.use(Card)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Dialog)
+Vue.use(Switch)
+Vue.use(Pagination)
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
