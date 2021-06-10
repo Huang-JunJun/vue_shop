@@ -24,6 +24,8 @@ import { Button,
     Pagination ,
     Tree ,
     Tag ,
+    Cascader ,
+    Timeline ,
 } from 'element-ui'
 import { MessageBox } from 'element-ui';
 
@@ -51,5 +53,7 @@ Vue.use(Switch)
 Vue.use(Pagination)
 Vue.use(Tree)
 Vue.use(Tag)
+Vue.use(Timeline)
+Vue.use(Cascader)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
