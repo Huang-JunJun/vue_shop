@@ -26,13 +26,23 @@ import { Button,
     Tag ,
     Cascader ,
     Timeline ,
+    Upload ,
+    TabPane ,
+    CheckboxGroup ,
+    Steps ,
+    Tabs ,
 } from 'element-ui'
 import { MessageBox } from 'element-ui';
 
 Vue.use(Button)
+Vue.use(Tabs)
+Vue.use(Steps)
+Vue.use(Upload)
+Vue.use(TabPane)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
+Vue.use(CheckboxGroup)
 Vue.use(Header)
 Vue.use(Container)
 Vue.use(Aside)
@@ -55,5 +65,6 @@ Vue.use(Tree)
 Vue.use(Tag)
 Vue.use(Timeline)
 Vue.use(Cascader)
+
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

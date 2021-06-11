@@ -68,9 +68,6 @@ export default {
     // 5.展示数据
     myChart.setOption(result)
   },
-  methods: {
-
-  }
 }
 </script>
 
